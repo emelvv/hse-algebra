@@ -228,6 +228,11 @@ INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Users\User\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\larm0800.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Users\User\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\larm0600.tfm
 OUTPUT main.pdf
 INPUT C:\Users\User\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT main.aux
