@@ -80,8 +80,19 @@
     $$k = \{0, 3, 6, 9\}$$
     \textbf{Ответ: } 4 гомоморфизма ($\phi(x) = kx, \;k = \{0, 3, 6, 9\}$)\\
 
-    \item[\textbf{№3}]Пусть $\phi: Q \to C\backslash \{0\}$
-    $$\phi(x) = \cos(2\pi x) + i \sin(2\pi x)$$
+    \item[\textbf{№3}]Мы знаем, что все элементы конечного порядка в группе 
+    $\CC\backslash \{0\}$ имеют вид $e^{2\pi i k/n}$, 
+    $k\in \ZZ, n \in \ZZ \backslash \{0\}$.
+    Пусть тогда $\phi: \QQ \to \CC\backslash \{0\}$:
+    $$\phi(x) = e^{2\pi i x} = \cos(2\pi x)+i\sin(2 \pi x)$$
+    Тогда $\Ker \phi$ - это подгруппа (проверим три свойства) всех элементов конечного 
+    порядка в группе $\CC\backslash \{0\}$. То есть:
+    $$\Im \phi = H$$
+    Также можно заметить:
+    $$\Ker \phi = \ZZ$$
+    Применим теорему о гомоморфизме для $\phi$:
+    $$Q / \Ker \phi \cong \Im \phi \quad \lr \quad  Q / \ZZ \cong H$$\\
+    
     
 
 \end{enumerate}
