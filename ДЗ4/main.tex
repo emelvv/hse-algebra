@@ -60,10 +60,98 @@
     $$A=\begin{pmatrix}a&0\\ b&c\end{pmatrix} \text{--- обратима }\lr \det A \neq 0 \lr ac \neq 0 \lr \case{a \neq 0\\c \neq 0} $$
     Значит все обратимые элементы имеют вид:
     $$\begin{pmatrix}a&0\\ b&c\end{pmatrix}, \quad \text{ где } a\neq 0 \text{ и } c \neq 0$$
-    Так как все делители нуля необратимы, то у делителей нуля или $a=0$ или $c = 0$. Найдём левые делители нуля:
-    $$\mat{a & 0 \\ b & c}\mat{x_1 & x_2 \\ x_3 & x_4} = 0$$
-    Если $a = 0$:
-    $$\mat{0 & 0 \\ b & c}\mat{x_1 & x_2 \\ x_3 & x_4} = 0 \implies \mat{x_1 & x_2 \\ x_3 & x_4} = \mat{1 & 0 \\ 1 & 0}$$
+    В кольце матриц \(A\) — нулевой делитель (левый или правый) тогда и только тогда, когда \(\det A=0\), то есть  
+    \[
+    ac = 0.
+    \]
+    \begin{enumerate}
+        \item[1)]Если $a = 0$:
+        
+        \[A=\begin{pmatrix}0&0\\ b&c\end{pmatrix}\]  
+        Возьмём, например,  
+        \[
+        X=\begin{pmatrix}c&0\\-b&0\end{pmatrix}\neq0.
+        \]
+        Тогда
+        \[
+        A\,X
+        =\begin{pmatrix}0&0\\ b&c\end{pmatrix}
+            \begin{pmatrix}c&0\\-b&0\end{pmatrix}
+        =\begin{pmatrix}0&0\\ b\,c - c\,b & 0\end{pmatrix}
+        =\begin{pmatrix}0&0\\0&0\end{pmatrix}.
+        \]
+        Значит, \(A\) — левый нулевой делитель.
+
+        \item[1)]Если $c = 0$:
+        \[A=\begin{pmatrix}a&0\\ b&0\end{pmatrix}\]   
+        Можно взять  
+        \[
+        X=\begin{pmatrix}0&a\\0&-b\end{pmatrix}\neq0
+        \]
+        и проверить \(A X=0\) аналогично.
+    \end{enumerate}
+
+    Аналогично для правых делителей, если \(ac=0\), то существует ненулевое \(Y\) с \(YA=0\).
+
+    Найдём все нильпотентные \(A=\begin{pmatrix}a&0\\ b&c\end{pmatrix}\)
+
+    Вычислим  
+    \[
+    A^2
+    = \begin{pmatrix}a&0\\b&c\end{pmatrix}
+        \begin{pmatrix}a&0\\b&c\end{pmatrix}
+    = \begin{pmatrix}a^2 & 0\\ b\,a + c\,b & c^2\end{pmatrix}
+    = \begin{pmatrix}a^2 & 0\\ b\,(a+c) & c^2\end{pmatrix}.
+    \]
+    Приравниваем к нулевой матрице:
+    \[
+    \begin{cases}
+        a^2 = 0,\\
+        c^2 = 0,\\
+        b\,(a+c) = 0.
+    \end{cases}
+    \]
+    В этом уравнении над полем \(\Bbb R\) из \(a^2=0\) и \(c^2=0\) сразу следует  
+    \[
+    a=0,\quad c=0.
+    \]
+    Тогда третье уравнение \(b\,(a+c)=b\cdot0=0\) выполняется при любом \(b\).
+
+    Значит
+    \[
+    A^2=0\quad\Longleftrightarrow\quad a=0,\;c=0,
+    \]
+    Так $A^n = A^2\cdot A^{n-2}$ $n \geq 2$, то все нильпотентные элементы имеют вид:
+    \[
+    A=\begin{pmatrix}0&0\\b&0\end{pmatrix},\quad b\in\Bbb R.
+    \]
+
+    \item[\textbf{№2}]Допустим, что  
+    \[
+      I=(x-2,y)=(g)
+    \]
+    для некоторого \(g \in \QQ[x,y]\), \(g\neq0\).
+
+    Тогда и \(x-2\in I\), и \(y\in I\) должны делиться на \(g\). То есть  
+    \[
+        g\mid(x-2)
+        \quad\text{и}\quad
+        g\mid y
+        \quad\Longrightarrow\quad
+        g\;\bigm|\;\gcd(x-2,\;y).
+    \]
+    Так как:
+    \[
+        \gcd(x-2,\;y)=1
+    \]
+    то любой их общий делитель \(g\) — обязательно обратимая константа из \(\QQ^\times\).
     
+    Если \(g\) — единица, то  
+    \[
+        I=(g)=\QQ[x,y],
+    \]
+    то есть идеал совпадёт со всем кольцом. Но это невозможно, потому что, например,  \(1 \notin (x-2,y)\)
+
+    Следовательно, этот идеал не главный
 \end{enumerate}
 \end{document}
