@@ -206,5 +206,28 @@
     \[
     \mathbb{C}[x]/(x^2 + 2x) \simeq \mathbb{C} \oplus \mathbb{C}
     \]
+
+    \item[\textbf{№4}]\begin{enumerate}
+        \item[(\(\Rightarrow\))] Если \( R/I \) --- поле, то \( I \neq R \) 
+        и нет собственных идеалов \( J \), содержащих \( I \).
+        \begin{itemize}
+            \item Предположим, \( R/I \) --- поле. 
+            Тогда \( R/I \) нетривиально (т.к. $0+I \neq 1 + I$), поэтому \( I \neq R \).
+            \item Допустим, существует идеал \( J \triangleleft R \),
+            такой что \( I \subsetneq J \subsetneq R \) ($J \subsetneq R$ т.к. в поле $0+J \neq 1 + J$). 
+            Рассмотрим факторкольцо \( J/I \). Оно является идеалом в \( R/I \):
+
+            (Для любого \( r + I \in R/I \) и \( j + I \in J/I \) произведение
+             \( (r + I)(j + I) = rj + I \) принадлежит \( J/I \), так как \( J \) 
+            --- идеал в \( R \) и \( rj \in J \).)
+            
+            Но поле не имеет собственных нетривиальных идеалов, кроме \(\{0\}\) и самого себя. 
+            Следовательно, \( J/I = \{0\} \) (т.к. если \( J/I = R/I \implies J = R \) --- противоречит \( J \subsetneq R \)), откуда \( J = I \). 
+            Это противоречит условию \( I \subsetneq J \).
+            Значит, таких идеалов \( J \) не существует.
+        \end{itemize}
+
+        \item[(\(\Leftarrow\))] :(
+    \end{enumerate}
 \end{enumerate}
 \end{document}
