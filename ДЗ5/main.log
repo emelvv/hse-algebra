@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.2)  7 MAY 2025 12:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.2)  7 MAY 2025 13:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -691,24 +691,87 @@ Overfull \hbox (15.98819pt too wide) detected at line 113
 []
  []
 
-[2] (main.aux)
+
+Overfull \hbox (28.40102pt too wide) detected at line 126
+\OML/cmm/m/it/12 x \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 3 = \OML/cmm/m/it/12 u\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) + \OML/cmm/m/it/12 v\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 g\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ;  u\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = 3\OML/cmm/m/it/12 x[] \OT1/cmr/m/n/12 + 4\OML/cmm/m/it/12 x \OT1/cmr/m/n/12 + 1\OML/cmm/m/it/12 ;  v\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = 6\OML/cmm/m/it/12 x[] \OT1/cmr/m/n/12 + 2\OML/cmm/m/it/12 x[] \OT1/cmr/m/n/12 + 6\OML/cmm/m/it/12 x \OT1/cmr/m/n/12 + 1
+ []
+
+[2]
+Overfull \hbox (4.10335pt too wide) detected at line 160
+\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )  =  []\OML/cmm/m/it/12 x \OMS/cmsy/m/n/12 ^^@ [][] []\OML/cmm/m/it/12 x \OMS/cmsy/m/n/12 ^^@ [] \OML/cmm/m/it/12 e[][] []x \OMS/cmsy/m/n/12 ^^@ [] \OML/cmm/m/it/12 e[][] \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 i[]\OT1/cmr/m/n/12 )(\OML/cmm/m/it/12 x \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 i[]\OT1/cmr/m/n/12 )
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--171
+
+ []
+
+[3]
+Overfull \hbox (8.52287pt too wide) in paragraph at lines 203--206
+[]\T2A/cmr/bx/n/12 ћногочлены, име-ю-щие ли-ней-ный мно-жи-тель (ко-рень)
+ []
+
+
+LaTeX Warning: Command \cyrs invalid in math mode on input line 207.
+
+
+LaTeX Warning: Command \cyrk invalid in math mode on input line 207.
+
+
+LaTeX Warning: Command \cyro invalid in math mode on input line 207.
+
+
+LaTeX Warning: Command \cyrr invalid in math mode on input line 207.
+
+
+LaTeX Warning: Command \cyrn invalid in math mode on input line 207.
+
+
+LaTeX Warning: Command \cyre invalid in math mode on input line 207.
+
+
+LaTeX Warning: Command \cyrm invalid in math mode on input line 207.
+
+Missing character: There is no с in font cmr8!
+Missing character: There is no к in font cmr8!
+Missing character: There is no о in font cmr8!
+Missing character: There is no р in font cmr8!
+Missing character: There is no н in font cmr8!
+Missing character: There is no е in font cmr8!
+Missing character: There is no м in font cmr8!
+
+Overfull \hbox (7.419pt too wide) in paragraph at lines 220--223
+[]\T2A/cmr/bx/n/12 ћногочлены, рас-кла-ды-ва-ю-щи-е-с€ в про-из-ве-де-ние двух
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
+
+ []
+
+[5] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 15755 strings out of 474485
- 306448 string characters out of 5753553
+ 15766 strings out of 474485
+ 306644 string characters out of 5753553
  1936542 words of memory out of 5000000
- 37763 multiletter control sequences out of 15000+600000
- 566766 words of font info for 59 fonts, out of 8000000 for 9000
+ 37771 multiletter control sequences out of 15000+600000
+ 568709 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,12n,93p,433b,285s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1440.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1728.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (2 pages, 90104 bytes).
+ 84i,12n,93p,433b,362s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1440.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1728.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (5 pages, 151576 bytes).
 PDF statistics:
- 142 PDF objects out of 1000 (max. 8388607)
+ 229 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
