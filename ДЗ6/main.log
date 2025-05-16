@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.2)  15 MAY 2025 19:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.2)  16 MAY 2025 19:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -681,24 +681,54 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 61.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] [3] (main.aux)
+{C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 114--116
+
+ []
+
+
+Overfull \hbox (38.12418pt too wide) detected at line 118
+\OML/cmm/m/it/12 f[] \OT1/cmr/m/n/12 = 2\OML/cmm/m/it/12 x[]x[]  \OT1/cmr/m/n/12 +  4\OML/cmm/m/it/12 x[]x[]  \OT1/cmr/m/n/12 +  \OML/cmm/m/it/12 x[]x[];  f[] \OT1/cmr/m/n/12 = 4\OML/cmm/m/it/12 x[]x[]  \OT1/cmr/m/n/12 +  \OML/cmm/m/it/12 x[]x[]  \OT1/cmr/m/n/12 +  4\OML/cmm/m/it/12 ;  f[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 x[]x[]  \OT1/cmr/m/n/12 +  4\OML/cmm/m/it/12 x[]  \OT1/cmr/m/n/12 +  8\OML/cmm/m/it/12 x[]
+ []
+
+[3] [4]
+Overfull \hbox (45.53165pt too wide) detected at line 224
+\OML/cmm/m/it/12 h[]  \OMS/cmsy/m/n/12 ^^@  \OML/cmm/m/it/12 x[] f[] \OT1/cmr/m/n/12 = []2\OML/cmm/m/it/12 x[]x[]x[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 x[]x[]x[][] \OT1/cmr/m/n/12 + [] \OML/cmm/m/it/12 x[]x[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 8\OML/cmm/m/it/12 x[]x[] \OT1/cmr/m/n/12 + 4\OML/cmm/m/it/12 x[]x[]  \OT1/cmr/m/n/12 =  [] \OML/cmm/m/it/12 x[]x[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 4\OML/cmm/m/it/12 x[]x[]  \OT1/cmr/m/n/12 =  \OML/cmm/m/it/12 h[]
+ []
+
+
+Overfull \hbox (13.55154pt too wide) detected at line 234
+\OML/cmm/m/it/12 h[]  \OMS/cmsy/m/n/12 ^^@  []\OML/cmm/m/it/12 x[] f[] \OT1/cmr/m/n/12 = [][]\OML/cmm/m/it/12 x[]x[] \OMS/cmsy/m/n/12 ^^@ []\OML/cmm/m/it/12 x[]x[][] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 4\OML/cmm/m/it/12 x[]x[] \OMS/cmsy/m/n/12 ^^@ []\OML/cmm/m/it/12 x[]x[] \OT1/cmr/m/n/12 + 0  =  \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 4\OML/cmm/m/it/12 x[]x[] \OMS/cmsy/m/n/12 ^^@ []\OML/cmm/m/it/12 x[]x[]  \OT1/cmr/m/n/12 =  \OML/cmm/m/it/12 h[]
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 270--272
+
+ []
+
+
+Overfull \hbox (14.6655pt too wide) in paragraph at lines 278--280
+[]\T2A/cmr/m/n/12 Следовательно, иде-ал стар-ших чле-нов $\OMS/cmsy/m/n/12 h[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 F\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 i$ \T2A/cmr/m/n/12 по-рож-да-ет-ся $[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 )$\T2A/cmr/m/n/12 . 
+ []
+
+[6] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 15762 strings out of 474485
- 306472 string characters out of 5753553
- 1933542 words of memory out of 5000000
- 37766 multiletter control sequences out of 15000+600000
+ 15766 strings out of 474485
+ 306592 string characters out of 5753553
+ 1940542 words of memory out of 5000000
+ 37770 multiletter control sequences out of 15000+600000
  569017 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,7n,93p,433b,211s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,11n,93p,433b,281s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1440.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1728.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (3 pages, 96127 bytes).
+Output written on main.pdf (6 pages, 115173 bytes).
 PDF statistics:
- 154 PDF objects out of 1000 (max. 8388607)
+ 184 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
