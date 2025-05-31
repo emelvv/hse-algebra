@@ -1,0 +1,337 @@
+\documentclass[a4paper]{article}
+\usepackage{setspace}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage[12pt]{extsizes}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{amssymb}
+\usepackage{amsmath, amsfonts, amssymb, amsthm, mathtools}
+\usepackage{tikz}
+
+\usetikzlibrary{positioning}
+\setstretch{1.3}
+
+\newcommand{\mat}[1]{\begin{pmatrix} #1 \end{pmatrix}}
+\newcommand{\vmat}[1]{\begin{vmatrix} #1 \end{vmatrix}}
+\renewcommand{\f}[2]{\frac{#1}{#2}}
+\newcommand{\dspace}{\space\space}
+\newcommand{\s}[2]{\sum\limits_{#1}^{#2}}
+\newcommand{\mul}[2]{\prod_{#1}^{#2}}
+\newcommand{\sq}[1]{\left[ {#1} \right]}
+\newcommand{\gath}[1]{\left[ \begin{array}{@{}l@{}} #1 \end{array} \right.}
+\newcommand{\case}[1]{\begin{cases} #1 \end{cases}}
+\newcommand{\ts}{\text{\space}}
+\newcommand{\lm}[1]{\underset{#1}{\lim}}
+\newcommand{\suplm}[1]{\underset{#1}{\overline{\lim}}}
+\newcommand{\inflm}[1]{\underset{#1}{\underline{\lim}}}
+\newcommand{\Ker}[1]{\operatorname{Ker}}
+
+\renewcommand{\phi}{\varphi}
+\newcommand{\lr}{\Leftrightarrow}
+\renewcommand{\l}{\left(}
+\renewcommand{\r}{\right)}
+\newcommand{\rr}{\rightarrow}
+\renewcommand{\geq}{\geqslant}
+\renewcommand{\leq}{\leqslant}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\VV}{\mathbb{V}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\OO}{\underline{O}}
+\newcommand{\oo}{\overline{o}}
+\renewcommand{\Ker}{\operatorname{Ker}}
+\renewcommand{\Im}{\operatorname{Im}}
+\newcommand{\vol}{\text{vol}}
+\newcommand{\Vol}{\text{Vol}}
+
+\DeclarePairedDelimiter\abs{\lvert}{\rvert} %
+\makeatletter                               % \abs{}
+\let\oldabs\abs                             %
+\def\abs{\@ifstar{\oldabs}{\oldabs*}}       %
+
+\begin{document}
+
+\section*{Домашнее задание на 03.06 (Алгебра)}
+ {\large Емельянов Владимир, ПМИ гр №247}\\\\
+\begin{enumerate}
+  \item[\textbf{№1}]Пусть
+  \[ g_1 = x^2 y + 2z^2, \quad g_2 = y^2 - yz \]
+  \[ \text{L}(g_1) = x^2 y, \quad \text{L}(g_2) = y^2, \quad
+    \text{lcm}(x^2 y, y^2) = x^2 y^2, \]
+  \[ S(g_1, g_2) = \frac{x^2 y^2}{x^2 y} g_1 - \frac{x^2 y^2}{y^2} g_2 =
+    y g_1 - x^2 g_2 = y(x^2 y + 2z^2) - x^2(y^2 - yz) =\]
+  \[ x^2 y^2 + 2y z^2 - x^2 y^2 +
+    x^2 y z = x^2 y z + 2y z^2 \]
+  так как:
+  \[ z \cdot g_1 = z(x^2 y + 2z^2) = x^2 y z + 2z^3 \]
+  вычтем:
+  \[ (x^2 y z + 2y z^2) - (x^2 y z + 2z^3) = 2y z^2 - 2z^3 \]
+  Добавляем \( g_3 = y z^2 - z^3 \)
+
+  Вычисляем \( S(g_1, g_3) \):
+  \[ \text{L}(g_1) = x^2 y, \quad \text{L}(g_3) =
+    y z^2, \quad \text{lcm}(x^2 y, y z^2) = x^2 y z^2, \]
+  \[ S(g_1, g_3) = \frac{x^2 y z^2}{x^2 y} g_1 - \frac{x^2 y z^2}{y z^2} g_3 \]
+  \[= z^2 g_1 - x^2 g_3 = z^2(x^2 y + 2z^2) - x^2(y z^2 - z^3) =
+    x^2 y z^2 + 2z^4 - x^2 y z^2 + x^2 z^3 = x^2 z^3 + 2z^4 \]
+  старший моном \( x^2 z^3 \) не делится ни на один старший моном базиса, поэтому добавляем \( g_4 = x^2 z^3 + 2z^4 \)
+
+  Теперь базис: \( \{g_1, g_2, g_3, g_4\} = \{x^2 y + 2z^2, y^2 - yz, y z^2 - z^3, x^2 z^3 + 2z^4\} \).
+
+  Проверяем остальные S-многочлены:
+  \begin{itemize}
+    \item\( S(g_2, g_3) = 0 \),
+    \item\( S(g_2, g_4) \) редуцируется к 0,
+    \item\( S(g_3, g_4) \) редуцируется к 0,
+    \item\( S(g_1, g_4) \) редуцируется к 0.
+  \end{itemize}
+  Все S-многочлены редуцируются к нулю, поэтому базис 
+  Грёбнера идеала \( I \):
+  \[ G = \{x^2 y + 2z^2, y^2 - yz, y z^2 - z^3, x^2 z^3 + 2z^4\}. \]
+
+  Теперь редуцируем \( f = x^3 y^2 z + b x y z^3 \) на \( G \):  
+  \[ x^3 z \cdot g_2 = x^3 z (y^2 - yz) = x^3 y^2 z - x^3 y z^2, \]  
+  \[ f - x^3 z g_2 = (x^3 y^2 z + b x y z^3) - (x^3 y^2 z - x^3 y z^2) = b x y z^3 + x^3 y z^2. \]  
+  Остаток \( r_1 = x^3 y z^2 + b x y z^3 \).  
+
+  \[ x z^2 \cdot g_1 = x z^2 (x^2 y + 2z^2) = x^3 y z^2 + 2x z^4, \]  
+  \[ r_1 - x z^2 g_1 = (x^3 y z^2 + b x y z^3) - (x^3 y z^2 + 2x z^4) = 
+  b x y z^3 - 2x z^4 \]  
+  Остаток \( r_2 = b x y z^3 - 2x z^4 \).  
+
+  \[ b x z \cdot g_3 = b x z (y z^2 - z^3) = b x y z^3 - b x z^4, \]  
+  \[ r_2 - b x z g_3 = (b x y z^3 - 2x z^4) - (b x y z^3 - b x z^4) = (b - 2) x z^4 \]  
+  Остаток \( r_3 = (b - 2) x z^4 \).  
+
+  Старший моном \( \text{L}(r_3) = x z^4 \) не делится ни на один старший моном базиса \( G \), так как:  
+  \begin{itemize}
+  \item  \( \text{L}(g_1) = x^2 y \) не делит (степень \( x \) выше)  
+  \item  \( \text{L}(g_2) = y^2 \) не делит (отсутствует \( y \))
+  \item  \( \text{L}(g_3) = y z^2 \) не делит (отсутствует \( y \))  
+  \item  \( \text{L}(g_4) = x^2 z^3 \) не делит (степень \( x \) выше)
+  \end{itemize}
+
+  Поэтому остаток \[ r_3 = (b - 2) x z^4 \]
+
+  Остаток равен нулю тогда и только тогда, когда \( b - 2 = 0 \), то есть \( b = 2 \). При \( b = 2 \) многочлен \( f \) принадлежит идеалу \( I \), так как редуцируется к нулю относительно базиса Грёбнера. При других значениях \( b \) остаток ненулевой, поэтому \( f \notin I \).
+
+  Таким образом, единственное значение параметра \( b \), при котором \( f \in I \), это \( b = 2 \).
+
+  \textbf{Ответ: } $b = 2$\\
+
+  \item[\textbf{№2}]Пусть
+  \[
+  f_1 = y^3 + 3xy, \quad f_2 = xy^2 + 2x^2 + y, \quad f_3 = x^2y - y^2.
+  \]
+  Старшие мономы при порядке \( x \succ y \):
+  \begin{itemize}
+    \item \( \text{LM}(f_1) = xy \) (так как \( xy \) содержит \( x \), а \( y^3 \) 
+    не содержит \( x \), и \( x \succ y \)).
+    \item \( \text{LM}(f_2) = x^2 \) (моном \( x^2 \) старше \( xy^2 \) и \( y \)).
+    \item \( \text{LM}(f_3) = x^2y \) (моном \( x^2y \) старше \( y^2 \)).
+  \end{itemize}
+
+  Вычисляем s-многочлены
+
+  \begin{itemize}
+    \item  $S(f_1, f_2)$:
+      \[
+      S(f_1, f_2) = \frac{\text{lcm}(xy, x^2)}{xy} f_1 - 
+      \frac{\text{lcm}(xy, x^2)}{x^2} f_2 = x f_1 - y f_2
+      \]
+      Подставляем:
+      \[
+      x f_1 = x(y^3 + 3xy) = xy^3 + 3x^2y, \quad y f_2 = y(xy^2 + 2x^2 + y) = 
+      xy^3 + 2x^2y + y^2
+      \]
+      \[
+      S(f_1, f_2) = (xy^3 + 3x^2y) - (xy^3 + 2x^2y + y^2) = x^2y - y^2 = f_3
+      \]
+      Остаток 0, так как \( f_3 \) уже в базисе.
+    
+    \item  $S(f_1, f_3)$:
+      \[
+      S(f_1, f_3) = \frac{\text{lcm}(xy, x^2y)}{xy} f_1 -
+       \frac{\text{lcm}(xy, x^2y)}{x^2y} f_3 = x f_1 - f_3
+      \]
+      Подставляем:
+      \[
+      x f_1 = x(y^3 + 3xy) = xy^3 + 3x^2y, \quad f_3 = x^2y - y^2,
+      \]
+      \[
+      S(f_1, f_3) = (xy^3 + 3x^2y) - (x^2y - y^2) = xy^3 + 2x^2y + y^2
+      \]
+      Редуцируем по базису \( \{f_1, f_2, f_3\} \):
+      
+      Старший моном \( 2x^2y \) делится на \( \text{LM}(f_3) = x^2y \) с частным 2:
+        \[
+        2 f_3 = 2(x^2y - y^2) = 2x^2y - 2y^2,
+        \]
+        \[
+        (xy^3 + 2x^2y + y^2) - (2x^2y - 2y^2) = xy^3 + 3y^2
+        \]
+       Старший моном \( xy^3 \) делится на \( \text{LM}(f_1) = xy \) с частным
+       \( \frac{1}{3} y^2 \):
+        \[
+        \frac{1}{3} y^2 f_1 = \frac{1}{3} y^2 (y^3 + 3xy) = \frac{1}{3} y^5 + xy^3,
+        \]
+        \[
+        (xy^3 + 3y^2) - \left( \frac{1}{3} y^5 + xy^3 \right) = -\frac{1}{3} y^5 + 3y^2
+        \]
+       Моном \( -\frac{1}{3} y^5 \) не делится на старшие мономы базиса. Добавляем новый
+        многочлен \( f_4 = y^5 - 9y^2 \) (умножив остаток на -3 для удобства).
+    
+      Теперь базис: \( \{f_1, f_2, f_3, f_4\} \).
+
+    \item$S(f_2, f_3)$:
+    \[
+    S(f_2, f_3) = \frac{\text{lcm}(x^2, x^2y)}{x^2} f_2 -
+     \frac{\text{lcm}(x^2, x^2y)}{x^2y} f_3 = y f_2 - f_3
+    \]
+    Подставляем:
+    \[
+    y f_2 = y(xy^2 + 2x^2 + y) = xy^3 + 2x^2y + y^2, \quad f_3 = x^2y - y^2,
+    \]
+    \[
+    S(f_2, f_3) = (xy^3 + 2x^2y + y^2) - (x^2y - y^2) = xy^3 + x^2y + 2y^2
+    \]
+    Редуцируем по базису \( \{f_1, f_2, f_3, f_4\} \):
+    
+    Старший моном \( x^2y \) делится на \( \text{LM}(f_3) = x^2y \) с частным 1:
+      \[
+      f_3 = x^2y - y^2, \quad S - f_3 = (xy^3 + x^2y + 2y^2) - 
+      (x^2y - y^2) = xy^3 + 3y^2
+      \]
+    Как и ранее, редуцируется до \( -\frac{1}{3} y^5 + 3y^2 \), который редуцируется к
+     0 с помощью \( f_4 \).
+  \end{itemize}
+  Вычисляем остальные S-многочлены $(S(f_1, f_4), S(f_2, f_4), S(f_3, f_4))$, и
+   все редуцируются к 0. Таким образом, базис Грёбнера: 
+   \( \{f_1, f_2, f_3, f_4\} = \{y^3 + 3xy,  xy^2 + 2x^2 + y,  x^2y - y^2,  y^5 - 9y^2\} \).
+
+  Для получения минимального редуцированного базиса:
+  \begin{enumerate}
+    \item Удаляем многочлены, старшие мономы которых делятся на старшие мономы других многочленов.
+    \item Делаем старшие коэффициенты равными 1.
+    \item Редуцируем каждый многочлен по остальным.
+  \end{enumerate}
+
+  
+  Старшие мономы:
+  \begin{itemize}
+    \item $\text{LM}(f_3) = x^2y$ делится на $\text{LM}(f_2) = x^2$, удаляем $f_3$.
+    \item $\text{LM}(f_4) = y^5$ не делится на другие, оставляем.
+    \item $\text{LM}(f_1) = xy$ не делится на $x^2$ или $y^5$, оставляем.
+    \item $\text{LM}(f_2) = x^2$ не делится на $xy$ или $y^5$, оставляем.
+  \end{itemize}
+  
+  Базис после минимизации: \( \{f_1, f_2, f_4\} = \{y^3 + 3xy,  xy^2 + 2x^2 + y,  y^5 - 9y^2\} \).
+
+  Делаем старшие коэффициенты равными 1:
+  \[
+  g_1 = \frac{1}{3} f_1 = \frac{1}{3} y^3 + xy, \quad g_2 = \frac{1}{2} f_2 =
+   \frac{1}{2} xy^2 + x^2 + \frac{1}{2} y, \quad g_4 = f_4 = y^5 - 9y^2
+  \]
+
+  Теперь редуцируем каждый полином по остальным
+  \begin{itemize}
+    \item 
+    Редукция $g_1$ по $\{g_2,\,g_3\}$
+  $$
+  g_1 = x\,y + \tfrac{1}{3}\,y^3
+  $$
+  Ведущий моном $x\,y$. $x^2$ (ведущий моном из $g_2$) не делит $x\,y$.
+  
+  $y^5$ из $g_3$ явно не делит ни $x\,y$, ни $y^3$.
+  
+  Следовательно, $g_1$  не изменяется : он уже «редуцирован» относительно
+   $g_2$ и $g_3$.
+  
+  \item Редукция $g_2$ по $\{g_1,\,g_3\}$
+  $$
+  g_2 = x^2 \;+\; \tfrac12\,x\,y^2 \;+\; \tfrac12\,y
+  $$
+  Старший моном $x^2$. Ни $xy$ (из $g_1$), ни $y^5$ (из $g_3$) не делят $x^2$.
+   Потому $x^2$ остаётся.
+  
+  Следующий по старшинству моном $\tfrac12\,x\,y^2$. Здесь $\mathrm{LM}(g_1)=x\,y$ 
+  делит $x\,y^2$.
+    $$
+    \frac{x\,y^2}{\,x\,y\,} = y
+    $$
+    Значит, есть что вычесть:
+    $$
+    y \cdot g_1 
+    = y\Bigl(x\,y + \tfrac13\,y^3\Bigr)
+    = x\,y^2 \;+\; \tfrac13\,y^4
+    $$
+    Чтобы убрать ровно $\tfrac12\,x\,y^2$, нам нужно взять $\tfrac12$ от этого:
+    $$
+    \frac12 \bigl(y\,g_1\bigr) 
+    = \frac12\,x\,y^2 \;+\; \frac{1}{6}\,y^4.
+    $$
+    Поэтому вычитаем из $g_2$ именно $\tfrac12\,y\,g_1$:
+    $$
+    g_2 
+    - \frac12\,y\,g_1
+    \;=\;
+    \bigl(x^2 + \tfrac12\,x\,y^2 + \tfrac12\,y\bigr)
+    \;-\;\Bigl(\tfrac12\,x\,y^2 + \tfrac{1}{6}\,y^4\Bigr)
+    \;=\;
+    x^2 
+    \;+\; \frac12\,y 
+    \;-\; \frac{1}{6}\,y^4
+    $$
+    После этой вычиталки $\tfrac12\,x\,y^2$ исчез, однако вместо него появился
+     моном $-\tfrac{1}{6}y^4$.
+   Теперь новое невырожденное сочетание равно
+
+    $$
+    \tilde g_2 \;=\; x^2 \;+\; \frac12\,y \;-\; \frac{1}{6}\,y^4
+    $$
+
+    Проверим оставшиеся мономы:
+
+     $x^2$ уже не делится ни на $xy$ (из $g_1$), ни на $y^5$ (из $g_3$).
+
+     $-\tfrac{1}{6}y^4$. Здесь $y^5$ не делит $y^4$, а $xy$ не делит $y^4$.
+
+     $\tfrac12\,y$ тем более не делится ни на $xy$, ни на $y^5$.
+
+      Значит, $\tilde g_2$ больше не редуцируется, и мы присваиваем:
+
+    $$
+    g_2' 
+    \;:=\;
+    x^2 \;-\; \frac{1}{6}\,y^4 \;+\; \frac12\,y
+    $$
+
+    \item Редукция $g_3$ по $\{g_1,\,g_2'\}$
+    $$
+    g_3 = y^5 - 9\,y^2
+    $$
+    Ведущий моном $y^5$. Ни $x\,y$ (из $g_1$), ни $x^2$ (из $g_2'$) не делят $y^5$.
+    
+    Обратный моном $-9y^2$ тоже не делится ни на $xy$, ни на $x^2$. Поэтому $g_3$ остаётся без изменений.
+  \end{itemize}
+
+  Получаем редуцированный минимальный базис Грёбнера
+  $$
+  \bigl\{\,g_1,\;g_2',\;g_3\bigr\} \;=\;
+  \Bigl\{
+  \,x\,y + \tfrac{1}{3}\,y^3,\;
+  x^2 \;-\; \tfrac{1}{6}\,y^4 \;+\; \tfrac{1}{2}\,y,\;
+  y^5 \;-\; 9\,y^2
+  \Bigr\}
+  $$
+  \textbf{Ответ: } $\Bigl\{
+  \,x\,y + \tfrac{1}{3}\,y^3,\;
+  x^2 \;-\; \tfrac{1}{6}\,y^4 \;+\; \tfrac{1}{2}\,y,\;
+  y^5 \;-\; 9\,y^2
+  \Bigr\}$
+  \end{enumerate}
+\end{document}
