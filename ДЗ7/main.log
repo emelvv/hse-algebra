@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.2)  1 JUN 2025 14:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.2)  1 JUN 2025 15:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -731,24 +731,49 @@ Overfull \hbox (15.28284pt too wide) detected at line 439
 \OML/cmm/m/it/12 f[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 x[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 xz[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 z[] [] x[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 x \OMS/cmsy/m/n/12 ^^A \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z \OMS/cmsy/m/n/12 ^^A \OML/cmm/m/it/12 z\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^A \OML/cmm/m/it/12 z \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 z[] \OMS/cmsy/m/n/12 ^^A \OML/cmm/m/it/12 z \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 x[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 x \OMS/cmsy/m/n/12 ^^A \OT1/cmr/m/n/12 1 \OMS/cmsy/m/n/12 ^^A \OML/cmm/m/it/12 z \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 2 \OMS/cmsy/m/n/12 ^^A \OT1/cmr/m/n/12 1 \OMS/cmsy/m/n/12 ^^A \OML/cmm/m/it/12 z \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 x[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 xz \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 z:
  []
 
-[10] [11] (main.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 470--471
+
+ []
+
+[10]
+Overfull \hbox (91.98033pt too wide) detected at line 509
+\OML/cmm/m/it/12 S\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 g[]; g[]\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 x \OMS/cmsy/m/n/12 ^^A \OML/cmm/m/it/12 g[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 1 \OMS/cmsy/m/n/12 ^^A \OML/cmm/m/it/12 g[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 x\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 y \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 1) \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 x[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 x[] \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 xy \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 x \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 z \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 x[] \OT1/cmr/m/n/12 + 2\OML/cmm/m/it/12 x \OT1/cmr/m/n/12 = 2\OML/cmm/m/it/12 x[] \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 xy \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 x \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 z:
+ []
+
+[11]
+Overfull \hbox (73.2396pt too wide) detected at line 532
+\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 3\OML/cmm/m/it/12 y \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 3 + (\OML/cmm/m/it/12 x[] \OT1/cmr/m/n/12 + 2\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 3\OML/cmm/m/it/12 y \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 3 + ((\OML/cmm/m/it/12 y \OT1/cmr/m/n/12 + 1)[] + 2(\OML/cmm/m/it/12 y \OT1/cmr/m/n/12 + 1)) = \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 3\OML/cmm/m/it/12 y \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 3 + (\OML/cmm/m/it/12 y[] \OT1/cmr/m/n/12 + 2\OML/cmm/m/it/12 y \OT1/cmr/m/n/12 + 1 + 2\OML/cmm/m/it/12 y \OT1/cmr/m/n/12 + 2) = \OML/cmm/m/it/12 y[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 y:
+ []
+
+
+Overfull \hbox (8.72816pt too wide) in paragraph at lines 537--540
+\T2A/cmr/m/n/12 что не рав-но $\OT1/cmr/m/n/12 0$ \T2A/cmr/m/n/12 тож-де-ствен-но. Это озна-ча-ет, что ис-ход-ный $\OML/cmm/m/it/12 S$\T2A/cmr/m/n/12 -многочлен
+ []
+
+[12]
+Overfull \hbox (80.37222pt too wide) detected at line 582
+\OML/cmm/m/it/12 y[] \OT1/cmr/m/n/12 + 5\OML/cmm/m/it/12 y[] \OT1/cmr/m/n/12 + 7\OML/cmm/m/it/12 y \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 y\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 y[] \OT1/cmr/m/n/12 + 4\OML/cmm/m/it/12 y \OT1/cmr/m/n/12 + 3) \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 y[] \OT1/cmr/m/n/12 + 4\OML/cmm/m/it/12 y \OT1/cmr/m/n/12 + 3) + 3 = \OML/cmm/m/it/12 y[] \OT1/cmr/m/n/12 + 5\OML/cmm/m/it/12 y[] \OT1/cmr/m/n/12 + 7\OML/cmm/m/it/12 y \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 y[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 4\OML/cmm/m/it/12 y[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 y \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 y[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 4\OML/cmm/m/it/12 y \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 3 + 3 = 0
+ []
+
+[13] [14] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 15764 strings out of 474485
- 306551 string characters out of 5753553
+ 15766 strings out of 474485
+ 306605 string characters out of 5753553
  1938542 words of memory out of 5000000
- 37768 multiletter control sequences out of 15000+600000
+ 37770 multiletter control sequences out of 15000+600000
  569579 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,93p,521b,290s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati1200.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1440.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1728.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (11 pages, 171629 bytes).
+Output written on main.pdf (14 pages, 182567 bytes).
 PDF statistics:
- 271 PDF objects out of 1000 (max. 8388607)
+ 283 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
