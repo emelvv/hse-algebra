@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.2)  31 MAY 2025 15:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.2)  1 JUN 2025 14:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -711,24 +711,44 @@ Overfull \hbox (2.33582pt too wide) detected at line 288
 \OML/cmm/m/it/12 g[] \OMS/cmsy/m/n/12 ^^@ [] \OML/cmm/m/it/12 y g[]  \OT1/cmr/m/n/12 =  []\OML/cmm/m/it/12 x[] \OT1/cmr/m/n/12 + [] \OML/cmm/m/it/12 x y[] \OT1/cmr/m/n/12 + [] \OML/cmm/m/it/12 y[]  \OMS/cmsy/m/n/12 ^^@  [][] \OML/cmm/m/it/12 x y[] \OT1/cmr/m/n/12 + [] \OML/cmm/m/it/12 y[][]  \OT1/cmr/m/n/12 =  \OML/cmm/m/it/12 x[]  \OT1/cmr/m/n/12 +  [] \OML/cmm/m/it/12 y  \OMS/cmsy/m/n/12 ^^@  [] \OML/cmm/m/it/12 y[]
  []
 
-[6] [7] (main.aux)
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 330--336
+
+ []
+
+[7] [8]
+Overfull \hbox (22.77283pt too wide) detected at line 388
+\OML/cmm/m/it/12 xyz[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 xz \OMS/cmsy/m/n/12 ^^A \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 yz\OT1/cmr/m/n/12 ) [] \OML/cmm/m/it/12 xz \OMS/cmsy/m/n/12 ^^A \OT1/cmr/m/n/12 1 = \OML/cmm/m/it/12 xz;  \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 yz[] \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 z[] \OMS/cmsy/m/n/12 ^^A \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 yz\OT1/cmr/m/n/12 ) [] \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 z[] \OMS/cmsy/m/n/12 ^^A \OT1/cmr/m/n/12 1 = \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 z[]:
+ []
+
+
+Overfull \hbox (37.02301pt too wide) detected at line 405
+\OML/cmm/m/it/12 xyz[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 xz[] \OMS/cmsy/m/n/12 ^^A \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 yz\OT1/cmr/m/n/12 ) [] \OML/cmm/m/it/12 xz[] \OMS/cmsy/m/n/12 ^^A \OT1/cmr/m/n/12 1 = \OML/cmm/m/it/12 xz[];  \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 yz[] \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 z[] \OMS/cmsy/m/n/12 ^^A \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 yz\OT1/cmr/m/n/12 ) [] \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 z[] \OMS/cmsy/m/n/12 ^^A \OT1/cmr/m/n/12 1 = \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 z[]:
+ []
+
+[9]
+Overfull \hbox (15.28284pt too wide) detected at line 439
+\OML/cmm/m/it/12 f[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 x[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 xz[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 z[] [] x[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 x \OMS/cmsy/m/n/12 ^^A \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z \OMS/cmsy/m/n/12 ^^A \OML/cmm/m/it/12 z\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^A \OML/cmm/m/it/12 z \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 z[] \OMS/cmsy/m/n/12 ^^A \OML/cmm/m/it/12 z \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 x[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 x \OMS/cmsy/m/n/12 ^^A \OT1/cmr/m/n/12 1 \OMS/cmsy/m/n/12 ^^A \OML/cmm/m/it/12 z \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 2 \OMS/cmsy/m/n/12 ^^A \OT1/cmr/m/n/12 1 \OMS/cmsy/m/n/12 ^^A \OML/cmm/m/it/12 z \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 x[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 xz \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 z:
+ []
+
+[10] [11] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 15762 strings out of 474485
- 306528 string characters out of 5753553
- 1937542 words of memory out of 5000000
- 37767 multiletter control sequences out of 15000+600000
- 568709 words of font info for 62 fonts, out of 8000000 for 9000
+ 15764 strings out of 474485
+ 306551 string characters out of 5753553
+ 1938542 words of memory out of 5000000
+ 37768 multiletter control sequences out of 15000+600000
+ 569579 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,8n,93p,521b,288s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1440.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1728.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (7 pages, 126603 bytes).
+ 84i,12n,93p,521b,290s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati1200.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1440.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1728.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (11 pages, 171629 bytes).
 PDF statistics:
- 204 PDF objects out of 1000 (max. 8388607)
+ 271 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
