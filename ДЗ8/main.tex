@@ -2,6 +2,7 @@
 \usepackage{setspace}
 \usepackage[utf8]{inputenc}
 \usepackage[russian]{babel}
+\usepackage{graphicx}
 \usepackage[12pt]{extsizes}
 \usepackage{mathtools}
 \usepackage{graphicx}
@@ -141,7 +142,107 @@
   \textbf{Ответ: } $x^4 - 4x^3 - 10x^2 + 28x - 11$\\
 
 
-  \item[\textbf{№3}]
+  \item[\textbf{№3}]Рассмотрим поле $\mathbb{F}_2 = \{0,1\}$ с обычной арифметикой по модулю 2
 
+  Возьмём неприводимый над $\mathbb{F}_2$ многочлен
+  $$
+  f(x) \;=\; x^3 + x + 1.
+  $$
+  Поскольку $\deg f = 3$ и $f$ неприводим, фактор‐кольцо
+  $$
+  \mathbb{F}_2[x] / \bigl(f(x)\bigr)
+  $$
+  является полем порядка $2^3 = 8$. Обозначим в этом поле класс образующий $x \bmod f$ через
+  $$
+  \alpha \quad\text{(то есть \(\alpha^3 = \alpha + 1\) в \(\mathbb{F}_8\)).}
+  $$
+  Тогда все элементы $\mathbb{F}_8$ можно записать в виде
+  $$
+  a_2\,\alpha^2 \;+\; a_1\,\alpha \;+\; a_0,
+  \qquad 
+  a_i \in \{0,1\},
+  $$
+  Таблица сложения в $\mathbb{F}_8$
+  
+  \scalebox{0.7}{
+    $
+    \begin{array}{c|cccccccc}
+    + & 0 & 1 & \alpha & \alpha+1 & \alpha^2 & \alpha^2+1 & \alpha^2+\alpha & \alpha^2+\alpha+1 \\ \hline
+    0               & 0           & 1           & \alpha        & \alpha+1    & \alpha^2       & \alpha^2+1     & \alpha^2+\alpha   & \alpha^2+\alpha+1 \\
+    1               & 1           & 0           & \alpha+1      & \alpha      & \alpha^2+1     & \alpha^2       & \alpha^2+\alpha+1 & \alpha^2+\alpha   \\
+    \alpha          & \alpha      & \alpha+1    & 0             & 1           & \alpha^2+\alpha & \alpha^2+\alpha+1 & \alpha^2       & \alpha^2+1       \\
+    \alpha+1        & \alpha+1    & \alpha      & 1             & 0           & \alpha^2+\alpha+1 & \alpha^2+\alpha & \alpha^2+1 & \alpha^2         \\
+    \alpha^2        & \alpha^2    & \alpha^2+1  & \alpha^2+\alpha & \alpha^2+\alpha+1 & 0           & 1           & \alpha        & \alpha+1        \\
+    \alpha^2+1      & \alpha^2+1  & \alpha^2    & \alpha^2+\alpha+1 & \alpha^2+\alpha   & 1           & 0           & \alpha+1   & \alpha         \\
+    \alpha^2+\alpha & \alpha^2+\alpha & \alpha^2+\alpha+1 & \alpha^2    & \alpha^2+1     & \alpha        & \alpha+1    & 0           & 1              \\
+    \alpha^2+\alpha+1 & \alpha^2+\alpha+1 & \alpha^2+\alpha & \alpha^2+1 & \alpha^2      & \alpha+1     & \alpha      & 1           & 0              \\
+    \end{array}
+    $
+  }\\
+
+  Таблица умножения в $\mathbb{F}_8$
+
+  \scalebox{0.7}{
+  $
+  \begin{array}{c|cccccccc}
+  \times & 0 & 1 & \alpha & \alpha+1 & \alpha^2 & \alpha^2+1 & \alpha^2+\alpha & \alpha^2+\alpha+1 \\ \hline
+  0               & 0   & 0       & 0            & 0           & 0          & 0            & 0              & 0                \\
+  1               & 0   & 1       & \alpha       & \alpha+1    & \alpha^2       & \alpha^2+1    & \alpha^2+\alpha   & \alpha^2+\alpha+1 \\
+  \alpha          & 0   & \alpha  & \alpha^2     & \alpha^2+\alpha & \alpha+1    & 1            & \alpha^2+\alpha+1 & \alpha^2+1       \\
+  \alpha+1        & 0   & \alpha+1 & \alpha^2+\alpha & \alpha^2+1 & \alpha^2+\alpha+1 & \alpha^2      & 1              & \alpha         \\
+  \alpha^2        & 0   & \alpha^2 & \alpha+1    & \alpha^2+\alpha+1 & \alpha^2+\alpha & \alpha       & \alpha^2+1     & 1              \\
+  \alpha^2+1      & 0   & \alpha^2+1 & 1         & \alpha^2    & \alpha      & \alpha^2+\alpha+1 & \alpha+1    & \alpha^2+\alpha   \\
+  \alpha^2+\alpha & 0   & \alpha^2+\alpha & \alpha^2+\alpha+1 & 1       & \alpha^2+1 & \alpha+1    & \alpha        & \alpha^2         \\
+  \alpha^2+\alpha+1 & 0   & \alpha^2+\alpha+1 & \alpha^2+1 & \alpha     & 1          & \alpha^2+\alpha & \alpha^2      & \alpha+1        \\
+  \end{array}
+  $}\\
+
+  \item[\textbf{№4}]Надо доказать, что если $K[\alpha]$ конечно как 
+  векторное пространство над $K$, то уже само кольцо $K[\alpha]$ является полем,
+  то есть
+  $$
+  K[\alpha] \;=\; K(\alpha)
+  $$
+  \begin{enumerate}
+    \item[1)]
+    Предположим, что $\dim_K K[\alpha] = n < \infty.$ Тогда семейство векторов
+    $$
+    1,\;\alpha,\;\alpha^2,\;\alpha^3,\;\dots
+    $$
+    не может быть линейно независимым навечно, ибо в $K[\alpha]$ как $K$-пространстве
+    всего конечная размерность. 
+
+    Значит, найдутся коэффициенты $c_0,c_1,\dots,c_m\in K$, не все нули, такие, что
+    $$
+    c_0\cdot1 \;+\; c_1\,\alpha \;+\; c_2\,\alpha^2 \;+\;\dots+\;c_m\,\alpha^m \;=\; 0
+    \quad\text{в }F.
+    $$
+    Это означает, что $\alpha$ является корнем некоторого ненулевого многочлена
+    $$
+    p(x) = c_0 + c_1 x + \dots + c_m x^m \;\in\; K[x]
+    $$
+    По определению, это и значит, что $\alpha$ алгебрично над $K$. В частности, 
+    существует единственный многочлен минимальной степени
+    $$
+    m_\alpha(x)\;\in\;K[x],\qquad m_\alpha(\alpha)=0
+    $$
+
+    И $\deg m_\alpha = d\le m \le n$\\
+
+    \item[2)]Так как $\alpha$ алгебрично, то
+    $$
+    K[\alpha] \;\cong\; K[x]\,/\bigl(m_\alpha(x)\bigr)
+    $$
+    Поскольку $m_\alpha(x)$ неприводим над $K$, фактор кольцо
+    $K[x]/(m_\alpha(x))$ --- поле, а значит $K[\alpha]$ тоже поле.
+    
+    Следовательно:
+
+    $$
+    K[\alpha] \;=\; K(\alpha)
+    $$
+
+
+  \end{enumerate}
   \end{enumerate}
 \end{document}
