@@ -1,0 +1,272 @@
+\documentclass[a4paper]{article}
+\usepackage{setspace}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{graphicx}
+\usepackage[12pt]{extsizes}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{amssymb}
+\usepackage{amsmath, amsfonts, amssymb, amsthm, mathtools}
+\usepackage{tikz}
+
+\usetikzlibrary{positioning}
+\setstretch{1.3}
+
+\newcommand{\mat}[1]{\begin{pmatrix} #1 \end{pmatrix}}
+\newcommand{\vmat}[1]{\begin{vmatrix} #1 \end{vmatrix}}
+\renewcommand{\f}[2]{\frac{#1}{#2}}
+\newcommand{\dspace}{\space\space}
+\newcommand{\s}[2]{\sum\limits_{#1}^{#2}}
+\newcommand{\mul}[2]{\prod_{#1}^{#2}}
+\newcommand{\sq}[1]{\left[ {#1} \right]}
+\newcommand{\gath}[1]{\left[ \begin{array}{@{}l@{}} #1 \end{array} \right.}
+\newcommand{\case}[1]{\begin{cases} #1 \end{cases}}
+\newcommand{\ts}{\text{\space}}
+\newcommand{\lm}[1]{\underset{#1}{\lim}}
+\newcommand{\suplm}[1]{\underset{#1}{\overline{\lim}}}
+\newcommand{\inflm}[1]{\underset{#1}{\underline{\lim}}}
+\newcommand{\Ker}[1]{\operatorname{Ker}}
+
+\renewcommand{\phi}{\varphi}
+\newcommand{\lr}{\Leftrightarrow}
+\renewcommand{\l}{\left(}
+\renewcommand{\r}{\right)}
+\newcommand{\rr}{\rightarrow}
+\renewcommand{\geq}{\geqslant}
+\renewcommand{\leq}{\leqslant}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\VV}{\mathbb{V}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\OO}{\underline{O}}
+\newcommand{\oo}{\overline{o}}
+\renewcommand{\Ker}{\operatorname{Ker}}
+\renewcommand{\Im}{\operatorname{Im}}
+\newcommand{\vol}{\text{vol}}
+\newcommand{\Vol}{\text{Vol}}
+
+\DeclarePairedDelimiter\abs{\lvert}{\rvert} %
+\makeatletter                               % \abs{}
+\let\oldabs\abs                             %
+\def\abs{\@ifstar{\oldabs}{\oldabs*}}       %
+
+\begin{document}
+
+\section*{Домашнее задание на 17.06 (Алгебра)}
+ {\large Емельянов Владимир, ПМИ гр №247}\\\\
+\begin{enumerate}
+  \item[\textbf{№1}]
+  По условию
+  \[
+    F_9 \; = \; \ZZ_3[x]\big/\bigl(x^2 + 2x + 2\bigr),
+  \]
+  Обозначим класс многочлена \(a + b x\) через пару \((a,b)\), где \(a,b\in\{0,1,2\}\).
+
+  
+  Так как в \(\ZZ_3\) выполнено \(-2 \equiv 1\pmod{3}\), 
+  из уравнения \(x^2 + 2x + 2 = 0\) следует
+  \[
+    x^2 \;\equiv\; -2x - 2 \;\equiv\; x + 1 \quad(\bmod\,3)
+  \]
+  Порождающие элементы имеют порядок 8. Проверим, что для каждого элемента $g$:
+  $$
+  g^1 \neq 1, \quad g^2 \neq 1, \quad g^4 \neq 1.
+  $$
+  Если это верно, то $g^8 = 1$, и $g$ — порождающий.
+    
+  \begin{enumerate}
+    \item Элемент $x$:
+      $$
+      \begin{aligned}
+      x^1 &= x \neq 1, \\
+      x^2 &= x + 1 \neq 1, \\
+      x^4 &= (x^2)^2 = (x + 1)^2 = x^2 + 2x + 1 \\ & = (x + 1) + 2x + 1 = 3x + 2 =
+       2 \neq 1
+      \end{aligned}
+      $$
+      Значит, порядок $x$ равен 8.
+
+    \item Элемент $2x$:
+      $$
+      \begin{aligned}
+      (2x)^1 &= 2x \neq 1, \\
+      (2x)^2 &= 4x^2 = 4(x + 1) = 4x + 4 = x + 1 \neq 1, \\
+      (2x)^4 &= (x + 1)^2 = 2 \neq 1
+      \end{aligned}
+      $$
+      Порядок $2x$ равен 8.
+
+    \item Элемент $x + 2$:
+      $$
+      \begin{aligned}
+      (x + 2)^1 &= x + 2 \neq 1, \\
+      (x + 2)^2 &= x^2 + 4x + 4 = (x + 1) + x + 1 = 2x + 2 \neq 1, \\
+      (x + 2)^4 &= (2x + 2)^2 = 4x^2 + 8x + 4 = 2 \neq 1
+      \end{aligned}
+      $$
+      Порядок $x + 2$ равен 8.
+
+    \item Элемент $2x + 1$:
+      $$
+      \begin{aligned}
+      (2x + 1)^1 &= 2x + 1 \neq 1, \\
+      (2x + 1)^2 &= 4x^2 + 4x + 1 = (x + 1) + x + 1 = 2x + 2 \neq 1, \\
+      (2x + 1)^4 &= (2x + 2)^2 = 2 \neq 1
+      \end{aligned}
+      $$
+      Порядок $2x + 1$ равен 8.
+  \end{enumerate}
+  Остальные элементы:
+  $1$ (порядок 1), 
+  $2$ (порядок 2), 
+  $x + 1$ и $2x + 2$ имеют порядок 4, так как $(x + 1)^4 = 2^2 = 1$ и $(2x + 2)^4 = 1$.
+
+  \textbf{Ответ: } $x, \quad 2x, \quad x + 2, \quad 2x + 1$\\
+
+  \item[\textbf{№2}]Многочлен \(x^2 + 3\) над \(\mathbb{Z}_5\):
+  \begin{itemize}
+  \item \(0^2 + 3 = 3 \neq 0\)
+  \item \(1^2 + 3 = 4 \neq 0\)
+  \item \(2^2 + 3 = 2 \neq 0\)
+  \item \(3^2 + 3 = 2 \neq 0\)
+  \item \(4^2 + 3 = 4 \neq 0\)
+  \end{itemize}
+
+  Нет корней, следовательно, \(x^2 + 3\) неприводим.
+
+  Многочлен \(y^2 + y + 2\) над \(\mathbb{Z}_5\):
+
+  \begin{itemize}
+    \item \(0^2 + 0 + 2 = 2 \neq 0\)
+    \item \(1^2 + 1 + 2 = 4 \neq 0\)
+    \item \(2^2 + 2 + 2 = 3 \neq 0\)
+    \item \(3^2 + 3 + 2 = 4 \neq 0\)
+    \item \(4^2 + 4 + 2 = 2 \neq 0\)
+  \end{itemize}
+
+  Нет корней, следовательно, \(y^2 + y + 2\) неприводим.
+
+  Обозначим:
+  \begin{itemize}
+  \item \(\alpha\) — корень \(x^2 + 3 = 0\) в \(\mathbb{Z}_5[x]/(x^2 + 3)\)
+  \item \(\beta\) — корень \(y^2 + y + 2 = 0\) в \(\mathbb{Z}_5[y]/(y^2 + y + 2)\)
+  \end{itemize}
+
+  Найдём подстановку \(\beta = a\alpha + b\), удовлетворяющую уравнению
+   \(\beta^2 + \beta + 2 = 0\). 
+   
+   После решения системы уравнений получаем два варианта:
+  \begin{itemize}
+  \item \(\beta = \alpha + 2\)
+  \item \(\beta = 4\alpha + 2\)
+  \end{itemize}
+
+  Выберем \(\beta = \alpha + 2\).
+  Тогда изоморфизм \(\phi: \mathbb{Z}_5[x]/(x^2 + 3) \to \mathbb{Z}_5[y]/(y^2 + y + 2)\)
+  задаётся как:
+  \[
+  \phi(a + b\alpha) = a + b\beta = a + b(\alpha + 2)
+  \]
+  Проверим
+  \begin{itemize}
+    \item \(\beta^2 = (\alpha + 2)^2 = \alpha^2 + 4\alpha + 4 = 2 + 4\alpha + 4 = 4\alpha + 1\),
+    \item \(\beta^2 + \beta + 2 = (4\alpha + 1) + (\alpha + 2) + 2 = 5\alpha + 5 \equiv 0 \mod 5\).
+  \end{itemize}
+  Изоморфизм сохраняет операции сложения и умножения, так как \(\beta\) удовлетворяет требуемому уравнению.
+
+  \textbf{Ответ: } $\phi(a + b\alpha) = a + b(\alpha + 2)$\\
+
+  \item[\textbf{№3}]Поле \(\mathbb{F}_{262144}\) имеет порядок \(2^{18}\). 
+  Подполя этого поля имеют порядки \(2^d\), где \(d\) — делитель 18.
+   Делители 18: \(1, 2, 3, 6, 9, 18\). 
+   
+  Соответствующие подполя:  
+  \[
+  \mathbb{F}_2, \quad \mathbb{F}_4, \quad \mathbb{F}_8, \quad \mathbb{F}_{64}, 
+  \quad \mathbb{F}_{512}, \quad \mathbb{F}_{262144}
+  \]
+  Проверим наличие корней в подполях
+  \begin{enumerate}
+  \item Подполе \(\mathbb{F}_2\)
+ 
+     Многочлен \(x^3 + x^2 + 1\) в \(\mathbb{F}_2[x]\):
+    \begin{itemize}
+      \item \(f(0) = 0 + 0 + 1 = 1 \neq 0\)
+      \item \(f(1) = 1 + 1 + 1 = 3 \equiv 1 \neq 0\)
+    \end{itemize}
+    \textbf{Корней нет}
+
+  \item Подполе \(\mathbb{F}_4\)
+    
+  Представим \(\mathbb{F}_4\) как \(\mathbb{F}_2[\alpha]/(\alpha^2 + \alpha + 1)\).
+   Элементы: \(0, 1, \alpha, \alpha + 1\).
+    \begin{itemize}
+      \item \(f(0) = 1 \neq 0\)
+      \item \(f(1) = 1 \neq 0\)
+      \item \(f(\alpha) = \alpha^3 + \alpha^2 + 1 = (\alpha + 1) + 
+      \alpha + 1 = 1 \neq 0\) (используя \(\alpha^2 = \alpha + 1\))
+      \item \(f(\alpha + 1) = (\alpha + 1)^3 + (\alpha + 1)^2 + 1 = \alpha + 1 \neq 0\)
+    \end{itemize}
+    \textbf{Корней нет}
+
+  \item Подполе \(\mathbb{F}_8\)
+
+  Многочлен \(x^3 + x^2 + 1\) неприводим над \(\mathbb{F}_2\)
+   (нет корней в \(\mathbb{F}_2\)). Следовательно, \(\mathbb{F}_8 \cong
+    \mathbb{F}_2[x]/(x^3 + x^2 + 1)\), и корень многочлена существует в \(\mathbb{F}_8\)
+    
+  \textbf{Корень есть}
+
+  \item Большие подполя
+  
+  Подполя \(\mathbb{F}_{64}\), \(\mathbb{F}_{512}\), \(\mathbb{F}_{262144}\) 
+  содержат \(\mathbb{F}_8\) (поскольку их порядки кратны \(8 = 2^3\)). 
+  Корень из \(\mathbb{F}_8\) автоматически принадлежит этим подполям.
+  
+  \textbf{Корень существует}
+  \end{enumerate}
+
+  \textbf{Ответ: } $\mathbb{F}_8, \mathbb{F}_{64},
+  \mathbb{F}_{512}, \mathbb{F}_{262144}$\\
+
+  \item[\textbf{№4}]
+  Пусть $ \beta \in \mathbb{F}_q $ — корень многочлена
+  $ f(x) = x^p - x - \alpha $.
+  
+  Тогда:
+  $$
+  \beta^p - \beta = \alpha
+  $$
+
+  В поле характеристики $ p $ выполняется тождество $(a + b)^p = a^p + b^p$.
+   Для любого $ c \in \mathbb{F}_p $:
+  $$
+  (\beta + c)^p - (\beta + c) = \beta^p + c^p - \beta - c
+  $$
+  Поскольку $ c \in \mathbb{F}_p $, по малой теореме Ферма $ c^p = c $. Тогда:
+  $$
+  (\beta + c)^p - (\beta + c) = \beta^p - \beta = \alpha
+  $$
+  Это означает, что $ \beta + c $ также является корнем $ f(x) $
+
+  
+  Так как $ \beta \in \mathbb{F}_q $ и $ c \in \mathbb{F}_p \subseteq 
+  \mathbb{F}_q $, все элементы вида $ \beta + c $ принадлежат 
+  $ \mathbb{F}_q $. 
+  
+  Множество 
+  $$\{\beta + c \mid c \in \mathbb{F}_p\}$$ 
+  содержит ровно $ p $ различных элементов 
+  (поскольку $ \beta + c_1 = \beta + c_2 \Rightarrow c_1 = c_2 $).
+
+  Таким образом, многочлен $ f(x) $ имеет $ p $ корней в $ \mathbb{F}_q $,
+   и его можно разложить на линейные множители:
+  $$
+  f(x) = \prod_{c \in \mathbb{F}_p} (x - (\beta + c))
+  $$
+\end{enumerate}
+\end{document}
